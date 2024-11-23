@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use app\Http\Controllers\NewsController;
 
 Route::prefix("/courses")->group(function() {
 	Route::post("/", [NewsController::class, "post_news"]);
